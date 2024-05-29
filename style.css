@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+*{
     margin: 0;
     padding: 0;
 }
@@ -33,7 +33,6 @@ nav {
     padding: 0 20px;
 }
 
-
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -63,11 +62,9 @@ nav {
     background-image: url('audi-q3-AQ31.jpg');
     background-size: cover;
     background-position: center;
-    /* Optionally, you can add more styling */
-    /* For example, you may want to set a height for the hero section */
     height: 100vh; 
     padding: 50px 0 50px 0;
-    /* You can also add other styling such as padding, margin, etc. */
+    
 }
 
 /* first Section*/
@@ -84,9 +81,11 @@ nav {
 }
 
 .hero p {
-    font-size: 24px;
+    height: 500px;
+    width: 230px;
+    font-size: 28px;
     margin-bottom: 40px;
-    color: rgb(181, 34, 34);
+    color: rgb(71, 21, 180);
 }
 
 
@@ -107,8 +106,6 @@ nav {
 }
 
 .featured {
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -120,23 +117,32 @@ nav {
 }
 
 .featured h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 40px;
 }
 
 .featured-card {
-    background-color: #45c5e4;
+    background-color: #161717;
     color: #e6feff;
     padding: 20px;
     border-radius: 5px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(91, 91, 91, 0.5);
 }
+.featured-card:hover{
+    cursor: pointer;
+    background-color: #333;
+}
 
 .featured-card img {
-    max-width: 70%;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+#img1{
+    object-fit: none;
 }
 
 .featured-card h3 {
@@ -157,7 +163,7 @@ nav {
 }
 
 .featured-card p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .center-content {
@@ -171,13 +177,7 @@ nav {
 .feature-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    /* align-items: stretch;
-    justify-content: stretch; */
 }
-
-
-
 
 footer {
     background-color: #333;
